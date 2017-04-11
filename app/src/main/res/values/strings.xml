@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TeaQuiz</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="check_the_resultBTN">Check the result</string>
+
+    <string name="q2_txt">What type of tea is the most famous darjeeling tea?</string>
+    <string name="q2_1txt">Black</string>
+    <string name="q2_2txt">Blue</string>
+    <string name="q2_3txt">White</string>
+
+    <string name="q3_txt">What type of tea is best prepared at 95°C?</string>
+    <string name="checkbox1_txt">Yellow</string>
+    <string name="checkbox2_txt">Black</string>
+    <string name="checkbox3_txt">Green</string>
+    <string name="checkbox4_txt">White</string>
+    <string name="checkbox5_txt">Red</string>
+
+    <string name="q4_txt">What is your favorite type of tea?</string>
+
+</resources>
