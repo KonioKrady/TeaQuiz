@@ -7,7 +7,8 @@
     android:descendantFocusability="beforeDescendants"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="pl.nurikuuda.teaquiz.MainActivity">
+    tools:context="pl.nurikuuda.teaquiz.MainActivity"
+    android:background="@color/colorBck">
 
     <ScrollView
         android:layout_width="@dimen/zeroDp"
@@ -26,10 +27,7 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/doubleDp">
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="16dp">
+            <RadioGroup style="@style/RadioGroupStyle">
 
                 <TextView
                     android:id="@+id/q1"
@@ -61,10 +59,11 @@
                     android:text="@string/q1_3txt" />
             </RadioGroup>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="@dimen/middleDp">
+            <ImageView
+                android:id="@+id/break1_imageV"
+                style="@style/LineBreakStyle" />
+
+            <RadioGroup style="@style/RadioGroupStyle">
 
                 <TextView
                     android:id="@+id/q2"
@@ -93,12 +92,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/q2_3txt" />
+
             </RadioGroup>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="@dimen/middleDp">
+            <ImageView
+                android:id="@+id/break2_imageV"
+                style="@style/LineBreakStyle" />
+
+            <RadioGroup style="@style/RadioGroupStyle">
 
                 <TextView
                     android:id="@+id/q3"
@@ -143,11 +144,13 @@
                     android:text="@string/checkbox5_txt" />
             </RadioGroup>
 
+            <ImageView
+                android:id="@+id/break3_imageV"
+                style="@style/LineBreakStyle" />
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="@dimen/middleDp">
+                style="@style/RadioGroupStyle"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/q4"
@@ -163,6 +166,10 @@
                     android:inputType="textMultiLine" />
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/break4_imageV"
+                style="@style/LineBreakStyle" />
 
             <Button
                 android:id="@+id/score_button"

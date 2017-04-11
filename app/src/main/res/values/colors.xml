@@ -3,4 +3,6 @@
     <color name="colorPrimary">#1b5e20</color>
     <color name="colorPrimaryDark">#43a047</color>
     <color name="colorAccent">#f57f17</color>
+    <color name="colorBck">#ffffff</color>
+    <color name="colorRadioGroup">#fafafa</color>
 </resources>
