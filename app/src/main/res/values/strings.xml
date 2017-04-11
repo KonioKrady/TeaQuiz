@@ -3,6 +3,11 @@
     <string name="title_activity_score">ScoreActivity</string>
     <string name="check_the_resultBTN">Check the result</string>
 
+    <string name="q1_txt">What tea has the most caffeine? (3,5% in dried leaves)</string>
+    <string name="q1_1txt">Oolong</string>
+    <string name="q1_2txt">Bancha</string>
+    <string name="q1_3txt">Gyokuro</string>
+
     <string name="q2_txt">What type of tea is the most famous darjeeling tea?</string>
     <string name="q2_1txt">Black</string>
     <string name="q2_2txt">Blue</string>
@@ -16,5 +21,7 @@
     <string name="checkbox5_txt">Red</string>
 
     <string name="q4_txt">What is your favorite type of tea?</string>
+
+    <string name="dsfvsdfasdfa_vsdvs">dsfvsdfasdfa vsdvs</string>
 
 </resources>

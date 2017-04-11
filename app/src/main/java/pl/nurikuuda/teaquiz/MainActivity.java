@@ -15,8 +15,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        score=0;
     }
+
+    protected void onResume() {
+        super.onResume();
+        score = 0;
+    }
+
     public void showScore(View view) {
         //q1
         if (((RadioButton) findViewById(R.id.q1_3)).isChecked())
