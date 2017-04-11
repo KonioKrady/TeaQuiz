@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="true"
     android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
     android:focusableInTouchMode="true"
     tools:context="pl.nurikuuda.teaquiz.MainActivity">
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="@dimen/zeroDp"
+        android:layout_height="@dimen/zeroDp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/middleDp"
             android:orientation="vertical"
-            android:paddingBottom="32dp">
+            android:paddingBottom="@dimen/doubleDp">
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -34,7 +36,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/q1_txt" />
+                    android:text="@string/q1_txt"
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/q1_1"
@@ -61,7 +64,7 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp">
+                android:padding="@dimen/middleDp">
 
                 <TextView
                     android:id="@+id/q2"
@@ -95,7 +98,7 @@
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="16dp">
+                android:padding="@dimen/middleDp">
 
                 <TextView
                     android:id="@+id/q3"
@@ -110,24 +113,28 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/checkbox1_txt" />
+
                 <CheckBox
                     android:id="@+id/checkBox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/checkbox2_txt" />
+
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/checkbox3_txt" />
+
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/checkbox4_txt" />
+
                 <CheckBox
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
@@ -140,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="@dimen/middleDp">
 
                 <TextView
                     android:id="@+id/q4"
@@ -158,11 +165,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
+                android:id="@+id/score_button"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:onClick="showScore"
-                android:padding="16dp"
+                android:padding="@dimen/middleDp"
                 android:text="@string/check_the_resultBTN" />
         </LinearLayout>
     </ScrollView>
