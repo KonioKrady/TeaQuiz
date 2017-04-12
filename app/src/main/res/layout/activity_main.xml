@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBck"
     android:descendantFocusability="beforeDescendants"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="pl.nurikuuda.teaquiz.MainActivity"
-    android:background="@color/colorBck">
+    tools:context="pl.nurikuuda.teaquiz.MainActivity">
 
     <ScrollView
         android:layout_width="@dimen/zeroDp"
@@ -31,11 +31,8 @@
 
                 <TextView
                     android:id="@+id/q1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/q1_txt"
-                    android:textSize="18sp" />
+                    style="@style/QuestionStyle"
+                    android:text="@string/q1_txt" />
 
                 <RadioButton
                     android:id="@+id/q1_1"
@@ -67,9 +64,7 @@
 
                 <TextView
                     android:id="@+id/q2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/QuestionStyle"
                     android:text="@string/q2_txt" />
 
                 <RadioButton
@@ -103,9 +98,7 @@
 
                 <TextView
                     android:id="@+id/q3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    style="@style/QuestionStyle"
                     android:text="@string/q3_txt" />
 
                 <CheckBox
@@ -154,8 +147,7 @@
 
                 <TextView
                     android:id="@+id/q4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/QuestionStyle"
                     android:text="@string/q4_txt" />
 
                 <EditText
@@ -163,6 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
+                    android:hint="Eg. Lapsang souchong"
                     android:inputType="textMultiLine" />
 
             </LinearLayout>
@@ -176,9 +169,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
                 android:onClick="showScore"
                 android:padding="@dimen/middleDp"
-                android:text="@string/check_the_resultBTN" />
+                android:text="@string/check_the_resultBTN"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
